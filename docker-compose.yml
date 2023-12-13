@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  memorio_backend:
+    container_name: memorio_backend
+    build: 
+      context: ./back
+      dockerfile: Dockerfile
+    ports:
+      - "3002:3002"
+  memorio_frontend:
+    container_name: memorio_frontend
+    build: 
+      context: ./front
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - memorio_backend
+networks:
+  memorio:
+    driver: host

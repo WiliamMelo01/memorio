@@ -1,0 +1,18 @@
+export const images = [
+  'chocolate',
+  'cookie',
+  'cotton-candy',
+  'croisant',
+  'cupcake',
+  'donut',
+  'fried-egg',
+  'fries',
+  'hamburger',
+  'ice-cream',
+  'milkshake',
+  'pizza',
+  'pretzel',
+  'taco',
+  'tempura',
+  'coxinha',
+];
